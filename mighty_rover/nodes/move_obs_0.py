@@ -33,19 +33,19 @@ class Moving():
             model = rospy.wait_for_message('gazebo/model_states', ModelStates)
             for i in range(len(model.name)):
 
-                if model.name[i] == 'unit_cylinder_0':
-                    obstacle.model_name = 'unit_cylinder_0'
+                if model.name[i] == 'human_deb':
+                    obstacle.model_name = 'human_deb'
                     obstacle.pose = model.pose[i]
                     obstacle.twist = Twist()
-                    obstacle.twist.linear.x = 6
+                    obstacle.twist.linear.x = -0.2
                     self.pub_model.publish(obstacle)
                     time.sleep(5)
 
-                if model.name[i] == 'unit_cylinder_0':
-                    obstacle.model_name = 'unit_cylinder_0'
+                if model.name[i] == 'human_deb':
+                    obstacle.model_name = 'human_deb'
                     obstacle.pose = model.pose[i]
                     obstacle.twist = Twist()
-                    obstacle.twist.linear.x = -5
+                    obstacle.twist.linear.x = 0.2
                     self.pub_model.publish(obstacle)
                     time.sleep(5)
 

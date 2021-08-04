@@ -301,7 +301,7 @@
 
 
 <gazebo reference="hokuyo_sensor">
-    <sensor type="ray" name="base_link_hokuyo_sensor">
+    <sensor type="gpu_ray" name="base_link_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
       <!--visualize>true</visualize-->
       <visualize>false</visualize>
@@ -329,7 +329,7 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
-      <plugin name="gazebo_ros_lidar_controller" filename="libgazebo_ros_laser.so">
+      <plugin name="gazebo_ros_lidar_controller" filename="libgazebo_ros_gpu_laser.so">
         <topicName>/scan</topicName>
         <frameName>hokuyo_sensor</frameName>
       </plugin>

@@ -3195,5 +3195,76 @@
         <kinematic>0</kinematic>
       </link>
     </model>
+<actor name="actor1">
+  <skin>
+        <filename>walk.dae</filename>
+        <scale>1.0</scale>
+     </skin>
+
+     <animation name="walking">
+        <filename>walk.dae</filename>
+        <scale>1.000000</scale>
+        <interpolate_x>true</interpolate_x>
+     </animation>
+
+     <script>
+        <loop>true</loop>
+        <delay_start>0.000000</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walking">
+           <waypoint>
+              <time>1.000000</time>
+              <pose>0 0 0 0.000000 0.000000 -1.47</pose>
+           </waypoint>
+           <waypoint>
+              <time>1.000000</time>
+              <pose>-1 0 0 0.000000 0.000000 -1.47</pose>
+           </waypoint>
+           <waypoint>
+              <time>1.500000</time>
+              <pose>-2 0 0 0.000000 0.000000 -1.47</pose>
+           </waypoint>
+           <waypoint>
+              <time>2.000000</time>
+              <pose>-3 0 0 0.000000 0.000000 -1.47</pose>
+           </waypoint>
+           <waypoint>
+              <time>2.500000</time>
+              <pose>-4 0 0 0.000000 0.000000 -1.47</pose>
+           </waypoint>
+           <waypoint>
+              <time>3.000000</time>
+              <pose>-5 0 0 0.000000 0.000000 -1.47</pose>
+           </waypoint>
+        </trajectory>
+     </script>
+
+  <link name="link">
+
+      <inertial>
+    <pose>0 0 0.95 0 0 0</pose>
+    <mass>80.0</mass>
+    <inertia>
+      <ixx>27.82</ixx>
+      <ixy>0</ixy>
+      <ixz>0</ixz>
+      <iyy>24.88</iyy>
+      <iyz>0</iyz>
+      <izz>4.57</izz>
+    </inertia>
+      </inertial>
+
+      <collision name="bottom">
+    <pose>0 0 0 0 0 0</pose>
+    <geometry>
+      <box>
+        <size>0.35 0.75 0.02</size>
+      </box>
+    </geometry>
+      </collision>
+</link>
+</actor>
+
+
   </world>
 </sdf>

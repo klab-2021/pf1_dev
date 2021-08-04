@@ -3,7 +3,7 @@
 
 <arg name="model" default="$(find mighty_rover)/xacro/mighty.xacro"/>
 <arg name="rvizconfig" default="$(find mighty_rover)/rviz/up04.rviz"/>
-<!--<arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz"/>-->
+<!-- <arg name="rvizconfig" default="$(find urdf_tutorial)/rviz/urdf.rviz"/> -->
 
 
 <arg name="robot_name" default="mighty1"/>
@@ -25,16 +25,16 @@
 
 <!--動的障害物についてs-->
 <!-- <node pkg="mighty_rover" type="move_obs.py" name="move_obs" output="screen"/> -->
-<!--<node pkg="mighty_rover" type="move_obs_0.py" name="move_obs_0" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_1.py" name="move_obs_1" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_2.py" name="move_obs_2" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_3.py" name="move_obs_3" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_4.py" name="move_obs_4" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_5.py" name="move_obs_5" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_6.py" name="move_obs_6" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_7.py" name="move_obs_7" output="screen"/>
-<node pkg="mighty_rover" type="move_obs_8.py" name="move_obs_8" output="screen"/> 
--->
+<!-- <node pkg="mighty_rover" type="move_obs_0.py" name="move_obs_0" output="screen"/> -->
+<!--<node pkg="mighty_rover" type="move_obs_1.py" name="move_obs_1" output="screen"/>-->
+<!-- <node pkg="mighty_rover" type="move_obs_2.py" name="move_obs_2" output="screen"/> -->
+<!-- <node pkg="mighty_rover" type="move_obs_3.py" name="move_obs_3" output="screen"/> -->
+<!-- <node pkg="mighty_rover" type="move_obs_4.py" name="move_obs_4" output="screen"/> -->
+<!-- <node pkg="mighty_rover" type="move_obs_5.py" name="move_obs_5" output="screen"/> -->
+<!-- <node pkg="mighty_rover" type="move_obs_6.py" name="move_obs_6" output="screen"/> -->
+<!-- <node pkg="mighty_rover" type="move_obs_7.py" name="move_obs_7" output="screen"/> -->
+<!-- <node pkg="mighty_rover" type="move_obs_8.py" name="move_obs_8" output="screen"/>  -->
+
 <!-- Load joint controller configuration from YAML file to parameter server -->
 
 <rosparam file="$(find mighty_rover)/config/joint_states.yaml" command="load"/>
